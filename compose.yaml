@@ -1,0 +1,15 @@
+﻿services:
+  postgres:
+    container_name: postgresAuth
+    image: postgres
+    environment:
+      POSTGRES_DB: Auth
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5436:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

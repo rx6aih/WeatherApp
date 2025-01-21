@@ -1,8 +1,31 @@
+using AuthService.DTO;
+using AuthService.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthService.Controllers;
 
-public class UserController : ControllerBase
+[ApiController]
+[Route("Authentication")]
+public class UserController(UserService userService) : ControllerBase
 {
-    
+    [HttpPost("Register")]
+    public async Task<IActionResult> Register(UserRegisterDto userRegisterDto)
+    {
+        await userService.Register(userRegisterDto.UserName, userRegisterDto.Email, userRegisterDto.Password);
+        return Ok();
+    }
+
+    [HttpPost("Login")]
+    public async Task<IActionResult> Login(UserLoginDto userLoginDto)
+    {
+        var token = await userService.Login(userLoginDto.Email, userLoginDto.Password);
+        HttpContext.Response.Cookies.Append("token", token, new CookieOptions() { SameSite = SameSiteMode.Lax });
+        return Ok(token);
+    }
+
+    [HttpGet("All")]
+    public async Task<IActionResult> GetAll()
+    {
+        return Ok(await userService.GetAllUsers());
+    }
 }

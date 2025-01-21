@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace AuthService.DAL.Implementations;
 
 
+
 public class UserRepository(AuthContext context) : Repository<User>(context)
 {
     public async Task Add(User user)
@@ -41,11 +42,7 @@ public class UserRepository(AuthContext context) : Repository<User>(context)
             .Where(u => u.Id == userId)
             .Select(u => u.Roles)
             .ToListAsync();
-        var some = roles
-            .SelectMany(r=> r)
-            .SelectMany(r => r.Permissions)
-            .Select(p=>(Enums.Permission)p.Id)
-            .ToHashSet();
+
         return roles
             .SelectMany(r=> r)
             .SelectMany(r => r.Permissions)
