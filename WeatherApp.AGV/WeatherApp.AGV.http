@@ -1,0 +1,6 @@
+@WeatherApp.AGV_HostAddress = http://localhost:5089
+
+GET {{WeatherApp.AGV_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
