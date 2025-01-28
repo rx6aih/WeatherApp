@@ -32,6 +32,21 @@ public class UserService(
         return token;
     }
 
+    public async Task<User> GetByEmail(string email)
+    {
+        var user = await userRepository.GetByEmailAsync(email);
+        return user;
+    }
+
+    public string Validate(string token)
+    {
+        var user = provider.ValidateToken(token);
+        if (user == null)
+            return string.Empty;
+
+        return user;
+    }
+    
     public async Task<List<User>> GetAllUsers()
     {
         return await userRepository.GetAllUsers();

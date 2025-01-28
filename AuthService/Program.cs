@@ -29,10 +29,13 @@ builder.Services.AddCors(options =>
             .AllowCredentials();
     });
 });
+
 var app = builder.Build();
+
 using var scope = app.Services.CreateScope();
 await using var dbContext = scope.ServiceProvider.GetRequiredService<AuthContext>();
 dbContext.Database.EnsureCreated();
+
 app.UseCors("ClientPermission");
 
 app.UseDeveloperExceptionPage();

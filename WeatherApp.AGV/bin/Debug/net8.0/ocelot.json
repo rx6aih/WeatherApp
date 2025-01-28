@@ -1,0 +1,14 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/test",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/Test/Testing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 5156
+      }]
+    }
+  ]
+}

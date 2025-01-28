@@ -28,4 +28,18 @@ public class UserController(UserService userService) : ControllerBase
     {
         return Ok(await userService.GetAllUsers());
     }
+
+    [HttpGet("Validate")]
+    public async Task<IActionResult> Validate([FromQuery] string email)
+    {
+        var user = await userService.GetByEmail(email);
+        var token = HttpContext.Request.Cookies["token"];
+        if(token == null)
+            return Unauthorized();
+
+        var userId = userService.Validate(token);
+        if(user.Id.ToString() != userId)
+            return Unauthorized();
+        return Ok(userId);
+    }
 }
