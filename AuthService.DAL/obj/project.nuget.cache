@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "It0xWUMq/18=",
+  "dgSpecHash": "weP3g/juXtc=",
   "success": true,
-  "projectFilePath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
+  "projectFilePath": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
   "expectedPackageFiles": [
     "/home/shmi/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/shmi/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

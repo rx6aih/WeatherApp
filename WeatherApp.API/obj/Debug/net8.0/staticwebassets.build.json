@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "HR5kwFLg7lBBiMxC9Z4RMYMWV6t3gi8+2qLiTuM/NFM=",
+  "Hash": "kNAV3fLuMTFCVtFuJ4iJGs8nwnBdqC10OiZntOQ8nvQ=",
   "Source": "WeatherApp.API",
   "BasePath": "_content/WeatherApp.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/AuthService.csproj",
+      "Identity": "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj",
       "Version": 2,
       "Source": "AuthService",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

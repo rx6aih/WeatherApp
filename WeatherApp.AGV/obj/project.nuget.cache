@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nMsdNzw9Jf0=",
+  "dgSpecHash": "wyaAND/GRFU=",
   "success": true,
-  "projectFilePath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj",
+  "projectFilePath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj",
   "expectedPackageFiles": [
     "/home/shmi/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
     "/home/shmi/.nuget/packages/ipaddressrange/6.1.0/ipaddressrange.6.1.0.nupkg.sha512",

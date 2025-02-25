@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj": {}
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj": {}
   },
   "projects": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj": {
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj",
         "projectName": "WeatherApp.AGV",
-        "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.AGV/WeatherApp.AGV.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.AGV/obj/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.AGV/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"

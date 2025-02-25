@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.API/WeatherApp.API.csproj": {}
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.API/WeatherApp.API.csproj": {}
   },
   "projects": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {
+    "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
         "projectName": "AuthService.DAL",
-        "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/obj/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"
@@ -73,14 +73,14 @@
         }
       }
     },
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/AuthService.csproj": {
+    "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/AuthService.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj",
         "projectName": "AuthService",
-        "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/AuthService.csproj",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/obj/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/AuthService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"
@@ -95,8 +95,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {
-                "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj"
+              "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj"
               }
             }
           }
@@ -159,14 +159,14 @@
         }
       }
     },
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.API/WeatherApp.API.csproj": {
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.API/WeatherApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.API/WeatherApp.API.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.API/WeatherApp.API.csproj",
         "projectName": "WeatherApp.API",
-        "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.API/WeatherApp.API.csproj",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.API/WeatherApp.API.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.API/obj/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"
@@ -181,8 +181,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/AuthService.csproj": {
-                "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService/AuthService.csproj"
+              "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj"
+              },
+              "/home/shmi/RiderProjects/WeatherApp/WeatherApp.BL/WeatherApp.BL.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.BL/WeatherApp.BL.csproj"
               }
             }
           }
@@ -221,6 +224,134 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.112/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.BL/WeatherApp.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.BL/WeatherApp.BL.csproj",
+        "projectName": "WeatherApp.BL",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.BL/WeatherApp.BL.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.BL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.112/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj",
+        "projectName": "WeatherApp.DAL",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.24, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

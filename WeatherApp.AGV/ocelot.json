@@ -1,13 +1,83 @@
 {
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/test",
+      "UpstreamPathTemplate": "/gateway/todayWeather/{everything}",
       "UpstreamHttpMethod": ["GET"],
-      "DownstreamPathTemplate": "/Test/Testing",
+      "DownstreamPathTemplate": "/temperature/today?city={everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [{
         "Host": "localhost",
-        "Port": 5156
+        "Port": 8080
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/todayWeatherByPoint/{longitude},{latitude}",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/temperature/todayByPoint?longitude={longitude}&latitude={latitude}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8080
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/tomorrow/{city}",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/temperature/tomorrow?city={city}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8080
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/yesterday/{city}",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/temperature/yesterday?city={city}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8080
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/weekly/{city}",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/temperature/weekly?city={city}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8080
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/averageTemperature/{city}",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/temperature/averageTemperature?city={city}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8080
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/register/{login},{email},{password}",
+      "UpstreamHttpMethod": ["POST"],
+      "DownstreamPathTemplate": "/Authentication/Register?UserName={login}&Email={email}&Password={password}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8081
+      }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/login/{login},{password}",
+      "UpstreamHttpMethod": ["POST"],
+      "DownstreamPathTemplate": "/Authentication/Login?Email={login}&Password={password}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "Port": 8081
       }]
     }
   ]

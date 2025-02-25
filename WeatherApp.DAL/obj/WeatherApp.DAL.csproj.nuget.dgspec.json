@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj": {}
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj": {}
   },
   "projects": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj": {
+    "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj",
         "projectName": "WeatherApp.DAL",
-        "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/WeatherApp.DAL.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/WeatherApp.DAL/obj/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/WeatherApp.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.24, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

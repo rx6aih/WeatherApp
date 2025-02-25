@@ -10,6 +10,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.DAL", "AuthServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.DAL", "WeatherApp.DAL\WeatherApp.DAL.csproj", "{58E3CA6C-7496-42AE-B69F-E815BB05C307}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.BL", "WeatherApp.BL\WeatherApp.BL.csproj", "{7DDA1D91-E39D-4A28-9534-7E229A318721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F94797B6-6EF6-4553-8047-7FB9C5611197}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +43,9 @@ Global
 		{58E3CA6C-7496-42AE-B69F-E815BB05C307}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58E3CA6C-7496-42AE-B69F-E815BB05C307}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58E3CA6C-7496-42AE-B69F-E815BB05C307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DDA1D91-E39D-4A28-9534-7E229A318721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DDA1D91-E39D-4A28-9534-7E229A318721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DDA1D91-E39D-4A28-9534-7E229A318721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DDA1D91-E39D-4A28-9534-7E229A318721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -9,14 +9,14 @@ namespace AuthService.Controllers;
 public class UserController(UserService userService) : ControllerBase
 {
     [HttpPost("Register")]
-    public async Task<IActionResult> Register(UserRegisterDto userRegisterDto)
+    public async Task<IActionResult> Register([FromQuery] UserRegisterDto userRegisterDto)
     {
         await userService.Register(userRegisterDto.UserName, userRegisterDto.Email, userRegisterDto.Password);
         return Ok();
     }
 
     [HttpPost("Login")]
-    public async Task<IActionResult> Login(UserLoginDto userLoginDto)
+    public async Task<IActionResult> Login([FromQuery] UserLoginDto userLoginDto)
     {
         var token = await userService.Login(userLoginDto.Email, userLoginDto.Password);
         HttpContext.Response.Cookies.Append("token", token, new CookieOptions() { SameSite = SameSiteMode.Lax });

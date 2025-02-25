@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {}
+    "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {}
   },
   "projects": {
-    "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {
+    "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
         "projectName": "AuthService.DAL",
-        "projectPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
+        "projectPath": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/AuthService.DAL.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/DependencyInjection/WeatherApp/AuthService.DAL/obj/",
+        "outputPath": "/home/shmi/RiderProjects/WeatherApp/AuthService.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"

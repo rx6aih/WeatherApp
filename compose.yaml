@@ -7,12 +7,32 @@
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - 5436:5432
+      - "5438:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
   auth:
-    build: .
+    build:
+      context: ./
+      dockerfile: AuthService/Dockerfile
     ports:
-      - 8080:8080
+      - "8081:8080"
+    depends_on:
+      - postgres
+    restart: always
+  api:
+    build:
+      context: ./
+      dockerfile: WeatherApp.API/Dockerfile
+    ports:
+      - "8080:8080"
+  redis:
+    image: redis/redis-stack-server:7.2.0-v6
+    ports:
+      - "6380:6379"
+    healthcheck:
+      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
+    volumes:
+      - redis_data:/data
 volumes:
   postgres-data:
+  redis_data:

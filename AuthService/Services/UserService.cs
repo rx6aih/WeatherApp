@@ -11,6 +11,7 @@ public class UserService(
     PasswordHasher passwordHasher,
     JwtProvider provider)
 {
+    PasswordHasher passwordHasher = new PasswordHasher();
     public async Task Register(string userName, string email, string password)
     {
         var hashedPassword = passwordHasher.Generate(password);
