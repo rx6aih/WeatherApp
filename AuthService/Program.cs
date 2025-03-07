@@ -1,7 +1,9 @@
+using AuthService.Controllers;
 using AuthService.DAL;
 using AuthService.DAL.Context;
 using AuthService.DAL.Implementations;
 using AuthService.Extensions;
+using AuthService.Services;
 using AuthService.Utility.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +14,9 @@ builder.Services.Configure<AuthorizationOptions>(builder.Configuration.GetSectio
 builder.Services.AddApiAuthentication(builder.Configuration);
 builder.Services.AddBusinessService();
 builder.Services.AddDal();
-
 builder.Services.AddTransient<UserRepository>();
+builder.Services.AddTransient<UserService>();
+builder.Services.AddHostedService<ConsumerService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -33,8 +36,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
 await using var dbContext = scope.ServiceProvider.GetRequiredService<AuthContext>();
-dbContext.Database.EnsureDeleted();
-dbContext.Database.EnsureCreated();
+
 
 app.UseCors("ClientPermission");
 

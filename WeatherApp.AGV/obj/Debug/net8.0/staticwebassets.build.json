@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "D4SU66Hd7bcZvHXy9jfrknPygCJSbQT11zIKys0Q//A=",
+  "Hash": "fwjwl//Xve5w7mvI2akKEAVozt/v+UMX5TR86NOxRWY=",
   "Source": "WeatherApp.AGV",
   "BasePath": "_content/WeatherApp.AGV",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj",
+      "Version": 2,
+      "Source": "AuthService",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

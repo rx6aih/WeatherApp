@@ -8,7 +8,6 @@ namespace AuthService.Services;
 
 public class UserService(
     UserRepository userRepository,
-    PasswordHasher passwordHasher,
     JwtProvider provider)
 {
     PasswordHasher passwordHasher = new PasswordHasher();

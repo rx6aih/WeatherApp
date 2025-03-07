@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Ch3DaimMKlI=",
+  "dgSpecHash": "rf1GPXS9+AI=",
   "success": true,
   "projectFilePath": "/home/shmi/RiderProjects/WeatherApp/AuthService/AuthService.csproj",
   "expectedPackageFiles": [
     "/home/shmi/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/home/shmi/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/shmi/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
+    "/home/shmi/.nuget/packages/confluent.kafka/2.8.0/confluent.kafka.2.8.0.nupkg.sha512",
+    "/home/shmi/.nuget/packages/librdkafka.redist/2.8.0/librdkafka.redist.2.8.0.nupkg.sha512",
     "/home/shmi/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.12/microsoft.aspnetcore.authentication.jwtbearer.8.0.12.nupkg.sha512",
     "/home/shmi/.nuget/packages/microsoft.aspnetcore.openapi/8.0.12/microsoft.aspnetcore.openapi.8.0.12.nupkg.sha512",
     "/home/shmi/.nuget/packages/microsoft.entityframeworkcore/9.0.1/microsoft.entityframeworkcore.9.0.1.nupkg.sha512",

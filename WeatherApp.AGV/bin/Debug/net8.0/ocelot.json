@@ -3,6 +3,9 @@
     {
       "UpstreamPathTemplate": "/gateway/todayWeather/{everything}",
       "UpstreamHttpMethod": ["GET"],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
       "DownstreamPathTemplate": "/temperature/today?city={everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [{

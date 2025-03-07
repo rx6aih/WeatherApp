@@ -15,7 +15,7 @@ public static class AuthExtension
         var jwtSettings = configuration.GetSection(nameof(JwtOptions)).Get<JwtOptions>();
         services
             .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+            .AddJwtBearer("Bearer",options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
